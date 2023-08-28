@@ -15,7 +15,7 @@
              width:150px; 
              position: relative; 
              margin: auto; 
-            
+             
              
              
   
@@ -46,6 +46,7 @@
     border-radius: 26px;
     
     
+    
 }
 
 input::placeholder{
@@ -57,7 +58,6 @@ input::placeholder{
   /* Seus estilos aqui */
   .box1{
    
-    
     padding: 10px ;
   }
   img{
@@ -69,6 +69,17 @@ input::placeholder{
   /* Outros estilos */
 }
 
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  /* Estilos que serão aplicados dentro desta faixa de largura */
+  /* Por exemplo: */
+    img{
+        width: 200px;
+    }
+  /* Adicione mais estilos conforme necessário */
+}
+
+
     
      </style> 
  </head> 
@@ -79,11 +90,11 @@ input::placeholder{
 
 
 <!-- PRIMEIRA CAIXA DE DIÁLOGO-->
-            <div class="mt-5 box1"> 
+            <div class="mt-5 box1 "> 
                 <h4 id="frasesdoJOTA" class=" text-center mb-5 text-primary " style="margin-top:40px;">conectando...</h4> 
 
-                <div class="container">
-                    <img src="assets/robo.gif" class="m-auto img-center mb-2"> 
+                <div class="container d-flex">
+                    <img src="assets/robo.gif" class=" mx-auto img-center mb-2"> 
                 </div>
                 
      
@@ -108,7 +119,7 @@ input::placeholder{
             <div class="mt-5 box2 box-hidden"> 
                 <h4 id="" class=" text-center mb-5 text-primary " style="margin-top:40px;">Que Belo nome! Agora me diz o ano que você nasceu</h4> 
 
-                <div class="container">
+                <div class="container d-flex">
                     <img src="assets/robo.gif" class="m-auto img-center mb-2"> 
                 </div>
                 
@@ -134,7 +145,7 @@ input::placeholder{
             <div class="mt-5 box3 box-hidden"> 
                 <h3 id="mensagem" class=" text-center mb-2 text-primary " style="margin-top:40px;">Que Belo nome! Agora me diz o ano que você nasceu</h3> 
 
-                <div class="container">
+                <div class="container d-flex">
                     <img src="assets/robo.gif" class="m-auto img-center mb-1"> 
                 </div>
                 
