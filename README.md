@@ -1,6 +1,6 @@
 
 Acesse :) 
-https://dinhosilwa.github.io/adivinhar-a-idade-com-js/
+https://dinhosilwa.github.io/o-JOTA-advinha-a-sua-idade-com-javascript/
 
 ![Print da tela inicial](https://i.imgur.com/vRXQlmw.png).
 
