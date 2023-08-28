@@ -2,7 +2,7 @@
 Acesse :) 
 https://dinhosilwa.github.io/adivinhar-a-idade-com-js/
 
-![Print da tela inicial](https://i.imgur.com/LMtdA4X.png).
+![Print da tela inicial](https://i.imgur.com/vRXQlmw.png).
 
 
 # Bot de Adivinhação de Idade
