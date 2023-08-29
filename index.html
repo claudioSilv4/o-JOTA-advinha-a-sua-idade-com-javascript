@@ -55,6 +55,14 @@
             font-weight: 100;
         }
 
+/* Estilo para o texto vermelho */
+.txt-red {
+    color: red;
+}
+
+
+
+
         /* Estilos para telas menores ou iguais a 480 pixels */
         @media (max-width: 480px) {
 
@@ -137,6 +145,11 @@
 
             /* Adicione mais estilos conforme necessário */
         }
+
+
+        .box3 > h3{
+            color: red;
+        }
     </style>
 </head>
 
@@ -163,6 +176,7 @@
                     id="nome" 
                     class="form-control text-center" 
                     placeholder="Digite seu nome"
+                   
                     style="font-size: 1.1rem; font-weight: bold; color: rgb(58, 58, 196);"
                     
                     />
@@ -204,17 +218,16 @@
         <!--TERCEIRA CAIXA DE DIÁLOGO-->
 
         <div class="mt-5 box3 box-hidden">
-            <h3 id="mensagem" class=" text-center mb-2 text-primary " style="margin-top:40px;">Que Belo nome! Agora me
-                diz o ano que você nasceu</h3>
+            <h3 id="mensagem" class=" text-center mb-2 text-primary text-danger text-center" style="margin-top:40px;"></h3>
 
             <div class="container d-flex">
-                <img src="assets/robo.gif" class="m-auto img-center mb-1">
+                <img src="assets/robo.gif" class="m-auto img-center mb-1 img-bot">
             </div>
 
 
             <form action="">
                 <div class="form-group d-flex align-items-center container-sm">
-
+                        
 
                     <div class="btn btn-primary mx-auto mt-5" onclick="location.reload()">Recarregar</div>
                 </div>
@@ -228,8 +241,11 @@
 
         <script>
 
-            function mostrarIdade() {
 
+
+        
+
+            function mostrarIdade() {
 
                 box2.classList.add("box-hidden");
                 box3.classList.remove("box-hidden");
@@ -243,6 +259,17 @@
                 let anodenascimento =
                     document.getElementById("anodenascimento").value;
 
+
+                    // validado da entrada ano de nascimento 
+                    if (isNaN(anodenascimento) || anodenascimento === "") {
+    document.getElementById("mensagem").textContent = "Por favor, insira um ano de nascimento válido.";
+
+    document.querySelector(".img-bot").src = "assets/invalido-bot.png";
+    
+    return;
+}
+
+
                 // new Date é um banco de datas 
                 let dataAno = new Date();
 
@@ -252,9 +279,13 @@
                 // Aqui somamos os valores das variáveis 
                 let idade =
                     anoAtual - anodenascimento;
+   
+                    
 
                 let msg =
                     "Olha que Bacana " + nome + " ! Já sei a sua idade , você tem " + idade + " anos";
+
+                
 
                 // Exibir a mensagem  
 
@@ -296,6 +327,9 @@
 
                 setInterval(mudarAsFrasesDoJota, 2000);
             };
+
+
+
 
 
 
