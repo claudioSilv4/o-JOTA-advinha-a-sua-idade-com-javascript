@@ -1,0 +1,140 @@
+img {
+    width: 150px;
+    position: relative;
+    margin: auto;
+
+}
+
+.btn:hover {
+    background-color: rgb(48, 1, 95);
+    transform: scaley(1);
+    transition: all 1s;
+}
+
+
+
+.box-hidden {
+    display: none;
+}
+
+.reload {
+    position: relative;
+    top: 50px;
+    left: 60%;
+    margin: auto;
+}
+
+
+.container-fluid {
+    background-color: aquamarine;
+}
+
+.box1,
+.box2,
+.box3 {
+    padding: 20px;
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 26px;
+
+}
+
+.box1:hover {
+    box-shadow: rgb(122, 199, 173) 2px 2px 100px;
+}
+
+input::placeholder {
+    font-weight: 100;
+}
+
+/* Estilo para o texto vermelho */
+.txt-red {
+color: red;
+}
+
+
+
+
+/* Estilos para telas menores ou iguais a 480 pixels */
+@media (max-width: 480px) {
+
+    /* Seus estilos aqui */
+    .box1 {
+
+        padding: 10px;
+    }
+
+    img {
+
+        width: 100%;
+    }
+
+
+    /* Outros estilos */
+}
+
+
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    /* Estilos que serão aplicados dentro desta faixa de largura */
+    /* Por exemplo: */
+    img {
+        width: 200px;
+    }
+
+    /* Adicione mais estilos conforme necessário */
+}
+
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    /* Estilos que serão aplicados dentro desta faixa de largura */
+    /* Por exemplo: */
+    img {
+        width: 240px;
+
+    }
+
+    .form-group1 {
+
+        width: 70%;
+    }
+
+
+    /* Adicione mais estilos conforme necessário */
+}
+
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+    /* Estilos que serão aplicados dentro desta faixa de largura */
+    /* Por exemplo: */
+    img {
+        width: 270px;
+
+    }
+
+    .form-group1 {
+        width: 60%;
+    }
+
+    /* Adicione mais estilos conforme necessário */
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+
+    /* Estilos que serão aplicados dentro desta faixa de largura */
+    /* Por exemplo: */
+    img {
+        width: 300px;
+
+    }
+
+    .form-group1,.form-group2 {
+        width: 50%;
+    }
+
+    /* Adicione mais estilos conforme necessário */
+}
+
